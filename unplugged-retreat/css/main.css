@@ -92,6 +92,56 @@ textarea {
   margin: 50px 0;
 }
 
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.875em;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+  line-height: 1.125em;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
 /* --------- Base Header - Footer Styles -------------------------------- */
 header,
 footer {
@@ -284,9 +334,6 @@ aside .content-wrapper .form {
 }
 
 
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -375,7 +422,7 @@ aside .content-wrapper .form {
    Modify as content requires.
    ========================================================================== */
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
  /* Tablet styles here */
 
  /* General styles */
@@ -397,14 +444,11 @@ aside .content-wrapper .form {
   }
 
   header nav {
-    justify-content: space-around;
-    width: 25%;
+    width: 20%;
   }
 
   header nav ul {
     justify-content: space-between;
-    width: 100%;
-    margin: 0;
   }
 
   .header-divider {
@@ -439,7 +483,7 @@ aside .content-wrapper .form {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
 /* Review */
@@ -470,7 +514,7 @@ footer .content-wrapper {
   }
 
   footer .copyright {
-    width: 25%;
+    width: 100%;
   }
 
 
@@ -480,7 +524,7 @@ footer .content-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px ;
 }
 
 .mission-content p {
@@ -516,7 +560,12 @@ footer .content-wrapper {
 
 @media screen and (min-width: 1200px) {
 
-  /* General styles */
+  /* Desktop styles */
+
+header {
+  padding: 15px 0;
+}
+
  .content-wrapper {
    max-width: 960px;
  }
