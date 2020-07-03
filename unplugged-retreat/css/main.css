@@ -178,6 +178,7 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+
 /* -------- Aside ------ */
 
 aside {
@@ -185,6 +186,11 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 40%;
 }
 
 /*------- Features ------------*/
@@ -391,11 +397,14 @@ aside {
   }
 
   header nav {
-    width: 20%;
+    justify-content: space-around;
+    width: 25%;
   }
 
   header nav ul {
     justify-content: space-between;
+    width: 100%;
+    margin: 0;
   }
 
   .header-divider {
@@ -461,7 +470,7 @@ footer .content-wrapper {
   }
 
   footer .copyright {
-    width: 100%;
+    width: 25%;
   }
 
 
@@ -503,12 +512,62 @@ footer .content-wrapper {
 .faq h2 {
   width: 100%;
  }
-
 }
 
 @media screen and (min-width: 1200px) {
 
-  /*Desktop styles here*/
+  /* General styles */
+ .content-wrapper {
+   max-width: 960px;
+ }
+
+/* Hero */
+
+  .hero-area h1 {
+    width: 60%;
+}
+
+   /*Aside */
+
+   aside .content-wrapper {
+     justify-content: space-around;
+   }
+
+   aside .content-wrapper .form-description,
+   aside .content-wrapper .form {
+     width: 30%;
+   }
+
+ /* Features */
+
+    .features h2 {
+      width: 90%;
+    }
+
+   .features article {
+     flex-basis: 33%;
+   }
+
+ /* Review */
+
+   .reviews article div {
+     width: 42%;
+   }
+
+
+ /* ==== About Page ====== */
+
+ .mission h2,
+ .contact-section .content-wrapper h2 {
+   width: 95%;
+ }
+
+
+ /* ==== FAQ Page ====== */
+
+ .faq h2 {
+   width: 100%;
+  }
 
 }
 
