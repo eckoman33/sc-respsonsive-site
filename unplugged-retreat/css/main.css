@@ -87,11 +87,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
-}
-
 /* General Styles */
 
 html {
@@ -113,7 +108,6 @@ ol {
 a {
   color: #e2e3ed;
   text-decoration: none;
-
 }
 
 h2 {
@@ -140,12 +134,23 @@ address {
   font-style: normal;
 }
 
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
 
+
 /* --------- Base Header - Footer Styles -------------------------------- */
+
 header,
 footer {
   display: flex;
@@ -165,6 +170,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -239,6 +252,10 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/jake-melara-30679-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -289,6 +306,9 @@ input[type=button] {
 /*------- Features ------------*/
 
 .features {
+  background: url('../img/rawpixel-800820-unsplash1.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -518,7 +538,12 @@ h3 {
     display: none;
   }
 
+
   /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -569,7 +594,8 @@ h3 {
     width: 85%;
   }
 
-  .reviews article div {
+  .reviews article div,
+  .reviews article figure {
     width: 49%;
   }
 
@@ -689,7 +715,7 @@ header {
 
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 80%;
 }
 
    /*Aside */
