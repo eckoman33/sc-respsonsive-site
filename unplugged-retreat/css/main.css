@@ -584,7 +584,7 @@ h3 {
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
-    margin: 0;
+    margin: 50px 0;
   }
 
   /*Aside */
@@ -605,7 +605,7 @@ h3 {
 /* Features */
 
   .features h2 {
-    margin-bottom: 20px;
+    margin: 70px 0px 20px 0px;
   }
 
   .features article {
@@ -632,6 +632,7 @@ h3 {
 
   .reviews h2 {
     width: 85%;
+    margin: 40px 0px 20px 0px;
   }
 
   .reviews article div,
